@@ -4,21 +4,23 @@
   --bg: #0a0a0c;
   --bg-card: #141417;
   --bg-card-hover: #1c1c21;
+  --bg-dark: #08080a;
   --text: #cdd6f4;
   --text-secondary: #a6adc8;
   --text-h: #ffffff;
   --accent: #ff6b00;
-  --accent-glow: rgba(255, 107, 0, 0.35);
-  --accent-bg: rgba(255, 107, 0, 0.08);
-  --accent-border: rgba(255, 107, 0, 0.4);
+  --accent-glow: rgba(255, 107, 0, 0.4);
+  --accent-bg: rgba(255, 107, 0, 0.1);
+  --accent-border: rgba(255, 107, 0, 0.5);
   --ct-blue: #4a9eff;
+  --tt-orange: #ff6b00;
   --danger: #ff3b3b;
   --success: #00ff88;
   --warning: #ffb800;
   --border: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 107, 0, 0.5);
+  --border-hover: rgba(255, 107, 0, 0.6);
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 40px rgba(255, 107, 0, 0.12);
+  --shadow-glow: 0 0 40px rgba(255, 107, 0, 0.15);
   --radius: 4px;
   --radius-sm: 3px;
   --nav-height: 60px;
@@ -26,16 +28,6 @@
   --sans: 'Inter', system-ui, sans-serif;
   --heading: 'Rajdhani', 'Inter', system-ui, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
-
-  font-family: var(--sans);
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--text);
-  background: var(--bg);
-  scroll-behavior: smooth;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -55,25 +47,12 @@ html {
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
 body {
-  background: var(--bg);
+  background: url(./assets/backbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: var(--sans);
   overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.15) 0px,
-    rgba(0, 0, 0, 0.15) 1px,
-    transparent 1px,
-    transparent 3px
-  );
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.3;
 }
 
 #root {

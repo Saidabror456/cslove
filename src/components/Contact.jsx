@@ -9,24 +9,12 @@ export default function Contact() {
       </h1>
       <p className="page-desc">Savollaringiz bo'lsa, bemalol yozing! Biz tushuntiramiz, o'rgatamiz, yordam beramiz.</p>
 
-      <div className="grid-3">
+      <div className="contact-single">
         <div className="contact-card">
           <div className="contact-icon">💬</div>
-          <h3>Discord</h3>
-          <p>Tezkor javob olish uchun Discord serverimizga qo'shiling.</p>
-          <a href="#" className="contact-btn">Join Server</a>
-        </div>
-        <div className="contact-card">
-          <div className="contact-icon">📱</div>
           <h3>Telegram</h3>
           <p>Shaxsiy xabarlar va savollar uchun Telegram orqali bog'laning.</p>
-          <a href="#" className="contact-btn">Open Telegram</a>
-        </div>
-        <div className="contact-card">
-          <div className="contact-icon">🎮</div>
-          <h3>Server</h3>
-          <p>To'g'ridan-to'g'ri serverda adminlarga murojaat qiling.</p>
-          <a href="#" className="contact-btn">Join Server</a>
+          <a href="https://t.me/L1elbir" target="_blank" rel="noopener noreferrer" className="contact-btn">Telegramni oching</a>
         </div>
       </div>
 

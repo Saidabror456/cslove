@@ -33,10 +33,6 @@ export default function Navbar({ activeSection, onNavigate }) {
             </li>
           ))}
         </ul>
-        <div className="nav-divider"></div>
-        <a href="https://" target="_blank" className="nav-server-btn">
-          Serverni ochish
-        </a>
       </div>
     </nav>
   )

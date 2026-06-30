@@ -5,7 +5,7 @@ export default function Home() {
     <div className="page home-page">
       <div className="hero-card">
         <div className="hero-badge">OFFICIAL</div>
-        <h1>CSLOVE.UZ<br />Admin Guide</h1>
+        <h1>CSLOVE.UZ<br />Admin Yo'riqnoma</h1>
         <p className="hero-subtitle">Standart server qoidalari va admin yo'riqnomasi</p>
         <div className="hero-chips">
           <span className="chip">CS 1.6</span>
