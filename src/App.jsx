@@ -66,18 +66,18 @@ function App() {
         isOpen={sidebarOpen}
         onToggle={() => setSidebarOpen(!sidebarOpen)}
       />
-<main className="main-layout">
-  <div 
-    className={`main-content ${getBgClass(activeSection)}`}
-    style={{ 
-      '--overlay-image': `url(${overlayImg})`,
-      backgroundImage: getBgImage(),
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    }}
-  >
-    {renderSection()}
-  </div>
+      <main className="main-layout">
+        <div 
+          className={`main-content ${getBgClass(activeSection)}`}
+          style={{ 
+            '--overlay-image': `url(${overlayImg})`,
+            backgroundImage: getBgImage(),
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        >
+          {renderSection()}
+        </div>
         <footer className="footer">
           <p>© 2026 CSLOVE.UZ — Admin Guide. Barcha huquqlar himoyalangan.</p>
         </footer>

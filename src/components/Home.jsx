@@ -4,14 +4,12 @@ export default function Home() {
   return (
     <div className="page home-page">
       <div className="hero-card">
-        <div className="hero-badge">OFFICIAL</div>
-        <h1>CSLOVE.UZ<br />Admin Yo'riqnoma</h1>
-        <p className="hero-subtitle">Standart server qoidalari va admin yo'riqnomasi</p>
+        <div className="hero-badge">CSLOVE.UZ</div>
+        <h1>Admin Yo'riqnoma</h1>
+        <p className="hero-subtitle">Server qoidalari haqida hamma narsani o'rganing</p>
         <div className="hero-chips">
-          <span className="chip">CS 1.6</span>
+          <span className="chip">Counter-Strike 1.6</span>
           <span className="chip">AmxMod X</span>
-          <span className="chip">Anti-Cheat</span>
-          <span className="chip">Public Server</span>
         </div>
       </div>
 
@@ -19,22 +17,22 @@ export default function Home() {
         <div className="info-card">
           <div className="card-icon"><Icon name="zap" size={32} /></div>
           <h3>Server haqida</h3>
-          <p>CSLOVE.UZ — Counter-Strike 1.6 serveri. Barcha o'yinchilar uchun ozoda va adolatli o'yin muhitini yaratish bizning asosiy maqsadimiz.</p>
+          <p>Bu CS 1.6 serveri. Hamma o'yinchilar tartiblik o'ynashlari kerak.</p>
         </div>
         <div className="info-card">
           <div className="card-icon"><Icon name="shield" size={32} /></div>
-          <h3>Admin vazifasi</h3>
-          <p>Admin — serverda tartibni saqlovchi, o'yinchilarga yordam beruvchi va adolatli bo'luvchi kishi. Har doim o'yinchilar bilan hurmatli munosabatda bo'lishi shart.</p>
+          <h3>Admin nima qiladi?</h3>
+          <p>Admin — bu tartibni saqlovchi. Ularning vazifasi: o'yinchilarga yordam berish, qoidalarni ta'minlash va ozroznli o'ynash.</p>
         </div>
         <div className="info-card">
           <div className="card-icon"><Icon name="book" size={32} /></div>
           <h3>Qoidalar</h3>
-          <p>Barcha adminlar va o'yinchilar CSLOVE.UZ qoidalariga rioya qilishlari shart. Qoidalar barcha uchun bir xil — istisno yo'q.</p>
+          <p>Hamma qoidalarga rioya qilish shart. Admin ham, o'yinchilar ham.</p>
         </div>
         <div className="info-card">
           <div className="card-icon"><Icon name="message" size={32} /></div>
           <h3>Yordam</h3>
-          <p>Savollaringiz bo'lsa, adminlar bilan bog'laning. Biz sizga tushuntiramiz, o'rgatamiz va yordam beramiz.</p>
+          <p>Savollaringiz bo'lsa, adminlarga murojaat qiling. Ularning telegrami — @L1elbir</p>
         </div>
       </div>
     </div>

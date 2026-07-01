@@ -23,6 +23,7 @@
   --shadow-glow: 0 0 40px rgba(255, 107, 0, 0.15);
   --radius: 4px;
   --radius-sm: 3px;
+  --radius-lg: 8px;
   --nav-height: 60px;
 
   --sans: 'Inter', system-ui, sans-serif;
@@ -41,10 +42,15 @@ html {
   scrollbar-color: var(--accent-border) transparent;
 }
 
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--accent-border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+::selection {
+  background: var(--accent);
+  color: #000;
+}
 
 body {
   background: url(./assets/backbg.jpg);
@@ -53,6 +59,7 @@ body {
   background-attachment: fixed;
   font-family: var(--sans);
   overflow-x: hidden;
+  color: var(--text);
 }
 
 #root {
@@ -80,7 +87,7 @@ a { color: var(--accent); text-decoration: none; }
 .inline-link {
   color: var(--accent);
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
   text-decoration-color: rgba(255, 107, 0, 0.3);
   transition: all 0.2s;
 }
@@ -88,4 +95,18 @@ a { color: var(--accent); text-decoration: none; }
 .inline-link:hover {
   text-decoration-color: var(--accent);
   filter: drop-shadow(0 0 4px var(--accent-glow));
+}
+
+/* Subtle decorative grid overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.4;
 }
